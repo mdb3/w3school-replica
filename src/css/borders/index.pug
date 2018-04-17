@@ -1,0 +1,20 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+    var myTitle = 'Learn to code CSS borders for beginners';
+    var myDescription = 'The CSS border properties allow you to specify the style, width, and color of an elements borders.';
+    var landingPage = 'CSS';
+    var activeLink = '/css/borders';
+
+block awesome-content
+  h1=myTitle
+  p=myDescription
+  h2 CSS Borders
+  p The border-style property specifies what kind of border to display.
+  h2 The border-style Property
+    tr
+      td(bgcolor="red", width="50%")
+      td red
+    p.dotted {border-style: dotted;}
+    p class="dotted" A dotted border

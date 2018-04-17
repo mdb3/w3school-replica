@@ -1,0 +1,26 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+    var myTitle = 'Learn to code CSS backgrounds for beginners';
+    var myDescription = 'The CSS background properties are used to define the background effects for elements.';
+    var landingPage = 'CSS';
+    var activeLink = '/css/backgrounds';
+
+block awesome-content
+  h1=myTitle
+  p=myDescription
+  div(style="background-color:green")
+    h1(style="color:white") My first background!
+  p CSS background properties:
+    li background-color
+    li background-image
+    li background-repeat
+    li background-attachment
+    li background-position
+
+    
+  div(style="background-color:yellow")
+    h1(style="color:white") Heading number 2
+  div(style="background-color:blue")
+    h1(style="color:yellow") Heading
